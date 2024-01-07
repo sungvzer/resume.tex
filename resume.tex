@@ -1,227 +1,111 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
 
 
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
 
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-% Customize the footer
-\cfoot{\footnotesize\textit{Resume written in \LaTeX, source code hosted on \href{https://github.com/sungvzer/resume.tex/}{\underline{GitHub}}, and \href{https://github.com/sungvzer/resume.tex/releases/latest}{\underline{released}} via GitHub Actions CI.}}
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
 
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-	\vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-	\item\small{
-		{#1 \vspace{-2pt}}
-	}
-}
-
-\newcommand{\resumeSubheading}[4]{
-	\vspace{-2pt}\item
-	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-		\textit{\small#3} & \textit{\small #4} \\
-	\end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-	\item
-	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-		\textit{\small#1} & \textit{\small #2} \\
-	\end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-	\item
-	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-		\small#1 & #2 \\
-	\end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-		\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-		\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
 
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo{./examples/profile.png}
+\name{Salvatore}{Gargano}
+\position{Full-Stack Software Engineer}
+% \address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
+
+\mobile{(+39) 334-257-5807}
+\email{sungvzer@proton.me}
+%\dateofbirth{January 1st, 1970}
+%\homepage{www.posquit0.com}
+\github{sungvzer}
+\linkedin{sungvzer}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{medium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+% \quote{«Be the change that you want to see in the world.»}
+
+
+%-------------------------------------------------------------------------------
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
 
-\begin{center}
-	\textbf{\Huge \scshape Salvatore Gargano} \\ \vspace{1pt}
-	\href{tel:+393342575807}{\underline{+39 334 257 5807}} $|$ \href{mailto:sungvzer@proton.me}{\underline{sungvzer@proton.me}} $|$
-	\href{https://linkedin.com/in/sungvzer}{\underline{linkedin.com/in/sungvzer}} $|$
-	\href{https://github.com/sungvzer}{\underline{github.com/sungvzer}}
-\end{center}
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Salvatore Gargano~\textbullet~Curriculum Vitae}
+  {\thepage}
 
 
-%-----------INTRODUCTION
-\section{Introduction}
-\resumeSubHeadingListStart
-\resumeItem{
-	Passionate software developer with a knack for tackling complex challenges and projects.
-
-	Proficient in full-stack web development, I thrive on creating elegant, high-quality software solutions. Seeking opportunities that allow me to push my skills to the limit and work with dynamic teams to deliver outstanding results. My goal is to stay at the forefront of technology and make a meaningful impact in the ever-evolving world of software development.
-}
-\resumeSubHeadingListEnd
-
-%-----------EDUCATION-----------
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Università degli Studi di Napoli Parthenope}{Sep. 2022 -- Present}
-{Bachelor's Degree in Computer Science (Expected Sep. 2025)}{Naples, Italy}
-\resumeItem{
-	Strong foundation in computer science and software development. Proficiency in various programming languages and software engineering principles.
-
-	Courses include: Operating Systems, Data Structures and Algorithms, Databases, Computer Networks, and others.}
-\resumeSubheading
-{Istituto Tecnico Industriale G. Ferraris}{Sep. 2016 -- Jun. 2021}
-{Technical Degree in Computer Science}{Naples, Italy}
-\resumeItem{
-	High-School Diploma with heavy focus on technical subjects, such as: Programming, Telecommunications, Databases, Systems, and Networks.
-
-	I engaged in many projects, like a greenhouse IoT monitoring system with Arduino and a backend written in Java.
-
-	I was able to learn and explore many languages and technologies, but most importantly the mental and attitudinal processes that are the foundation of this field.
-}
-\resumeSubHeadingListEnd
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{cv/experience.tex}
+\input{cv/education.tex}
+\input{cv/skills.tex}
+% \input{cv/extracurricular.tex}
+% \input{cv/honors.tex}
+% \input{cv/certificates.tex}
+% \input{cv/presentation.tex}
+% \input{cv/writing.tex}
+% \input{cv/committees.tex}
 
 
-%-----------EXPERIENCE-----------
-\section{Experience}
-\resumeSubHeadingListStart
-
-\resumeSubheading
-{Software Developer}{Apr. 2022 -- Present}
-{Kotuko S.r.l.}{Remote}
-\resumeItemListStart
-\resumeItem{Developed regulation-compliant managerial software for a pharmaceutical and cosmetics analysis firm}
-\resumeItem{Developed a full-stack web application split into two websites using Loopback, Vue.js, PostgreSQL and Docker}
-\resumeItem{Managed CI/CD pipelines on Bitbucket to automate deployments to production, staging and QA environments}
-\resumeItem{Maintained the official Flutter mobile application for an Italian University}
-\resumeItemListEnd
-
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-\resumeSubheading
-{Cybersecurity Analyst}{Nov. 2021 -- Mar. 2022}
-{Capgemini Italy}{Remote}
-\resumeItemListStart
-\resumeItem{Maintained up-to-date knowledge of cybersecurity best practices for enterprise software}
-\resumeItem{Improved threat management by customizing proprietary and open source software}
-\resumeItem{Worked with source code vulnerability testing with tools like SonarQube and VulnerabilityCheck}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{Chippy} $|$ \emph{Rust, pixels, Tao}}{Dec. 2022 -- Jan. 2023}
-\resumeItemListStart
-\resumeItem{Wrote a \href{https://en.wikipedia.org/wiki/CHIP-8}{\underline{CHIP-8}} compliant CPU emulator}
-\resumeItem{35 opcodes, with 2D graphics, sound and keyboard support}
-\resumeItemListEnd
-\resumeProjectHeading
-{\textbf{mone.io} $|$ \emph{Firebase, Flutter}}{Jan. 2021 -- Jun. 2021}
-\resumeItemListStart
-\resumeItem{Personal finance demo application written as a High-School graduation project}
-\resumeItem{Written in Flutter, manages the income and expenses of the user}
-\resumeItem{Authentication, data storage and backend functionalities implemented with Firebase}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{
-	      \textbf{Languages}{: Python, C/C++, SQL (Postgres), NoSQL (MongoDB), JavaScript, TypeScript, HTML/CSS, Dart} \\
-	      \textbf{Frameworks}{: React, Vue.js, Loopback, NestJS, Node.js, Flutter} \\
-	      \textbf{Developer Tools}{: Git, Docker, Bitbucket CI, VS Code, NeoVIM, Linux, SonarQube} \\
-	      \textbf{Libraries}{: Istanbul (nyc), Mocha, Jest}
-	      }}
-\end{itemize}
-
-
-%-------------------------------------------
+%-------------------------------------------------------------------------------
 \end{document}
