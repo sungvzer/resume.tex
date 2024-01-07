@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/sungvzer/resume.tex/compare/v1.1.0...v2.0.0) (2024-01-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* switch to AwesomeCV
+
+### Features
+
+* remove docs ([7a4faf3](https://github.com/sungvzer/resume.tex/commit/7a4faf326c403993727030728f2de8ea2937ff7b))
+* switch to AwesomeCV ([e5b8a1e](https://github.com/sungvzer/resume.tex/commit/e5b8a1ea3ca64e853ed97cfaf8af5b5e47f07487))
+
 ## [1.1.0](https://github.com/sungvzer/resume.tex/compare/v1.0.0...v1.1.0) (2023-10-17)
 
 
