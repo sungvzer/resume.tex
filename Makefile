@@ -1,10 +1,10 @@
 all: build
 
 build:
-	latexmk -pdf resume.tex coverletter.tex
+	latexmk -pdf resume.tex
 
 watch:
-	latexmk -pvc -pdf resume.tex coverletter.tex
+	latexmk -pvc -pdf resume.tex
 
 clean:
-	latexmk -C resume.tex coverletter.tex
+	latexmk -C resume.tex
