@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/sungvzer/resume.tex/compare/v2.0.0...v2.1.0) (2025-01-27)
+
+
+### Features
+
+* new work experience ([9397cb6](https://github.com/sungvzer/resume.tex/commit/9397cb6cb6730b7e4f356782de05b1c381859783))
+
 ## [2.0.0](https://github.com/sungvzer/resume.tex/compare/v1.1.0...v2.0.0) (2024-01-07)
 
 
