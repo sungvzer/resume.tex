@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/sungvzer/resume.tex/compare/v2.1.0...v2.2.0) (2025-01-27)
+
+
+### Features
+
+* expand on current work experience ([ccdbcd7](https://github.com/sungvzer/resume.tex/commit/ccdbcd70c28c23e43f593220daa868b5672f98f4))
+
 ## [2.1.0](https://github.com/sungvzer/resume.tex/compare/v2.0.0...v2.1.0) (2025-01-27)
 
 
