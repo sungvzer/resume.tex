@@ -17,13 +17,11 @@
 % LPPL v1.3c (http://www.latex-project.org/lppl)
 %
 
-
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
 \ProvidesClass{awesome-cv}[2017/02/05 v1.6.1 Awesome Curriculum Vitae Class]
 \NeedsTeXFormat{LaTeX2e}
-
 
 %-------------------------------------------------------------------------------
 %                Class options
@@ -41,7 +39,6 @@
 }
 \ProcessOptions\relax
 \LoadClass{article}
-
 
 %-------------------------------------------------------------------------------
 %                3rd party packages
@@ -117,7 +114,6 @@
 % Enable if you want to make header or footer using fancyhdr
 \pagestyle{fancy}
 
-
 %-------------------------------------------------------------------------------
 %                Configuration for colors
 %-------------------------------------------------------------------------------
@@ -158,7 +154,6 @@
 \def\@sectioncolor#1#2#3{%
 	\ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
 }
-
 
 %-------------------------------------------------------------------------------
 %                Configuration for fonts
@@ -218,7 +213,6 @@
 \newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
-
 
 %-------------------------------------------------------------------------------
 %                Commands for personal information
@@ -402,7 +396,6 @@
 	\def\@letterenclosure{#2}
 }
 
-
 %-------------------------------------------------------------------------------
 %                Commands for extra
 %-------------------------------------------------------------------------------
@@ -421,7 +414,6 @@
 \newcommand{\acvSectionTopSkip}{3mm}
 \newcommand{\acvSectionContentTopSkip}{2.5mm}
 
-
 %-------------------------------------------------------------------------------
 %                Commands for utilities
 %-------------------------------------------------------------------------------
@@ -435,7 +427,6 @@
 
 % Use to execute conditional statements by checking empty string
 \newcommand*{\ifempty}[3]{\ifthenelse{\isempty{#1}}{#2}{#3}}
-
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of CV structure
@@ -656,7 +647,7 @@
 \newenvironment{cventries}{%
 	\vspace{\acvSectionContentTopSkip}
 	\begin{center}
-		}{%
+}{%
 	\end{center}
 }
 % Define an entry of cv information
@@ -679,7 +670,7 @@
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
 	\begin{center}
-		}{%
+}{%
 	\end{center}
 }
 % Define a subentry of cv information
@@ -705,11 +696,11 @@
 	\vspace{\acvSectionContentTopSkip}
 	\vspace{-2mm}
 	\begin{center}
-		\setlength\tabcolsep{0pt}
-		\setlength{\extrarowheight}{0pt}
-		\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
-			}{%
-		\end{tabular*}
+	\setlength\tabcolsep{0pt}
+	\setlength{\extrarowheight}{0pt}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
+}{%
+	\end{tabular*}
 	\end{center}
 }
 % Define a line of cv information(honor, award or something else)
@@ -723,11 +714,11 @@
 	\vspace{\acvSectionContentTopSkip}
 	\vspace{-2.0mm}
 	\begin{center}
-		\setlength\tabcolsep{1ex}
-		\setlength{\extrarowheight}{0pt}
-		\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
-			}{%
-		\end{tabular*}
+	\setlength\tabcolsep{1ex}
+	\setlength{\extrarowheight}{0pt}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+}{%
+	\end{tabular*}
 	\end{center}
 }
 % Define a line of cv information(skill)
@@ -740,15 +731,13 @@
 \newenvironment{cvitems}{%
 	\vspace{-4.0mm}
 	\begin{justify}
-		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-			\setlength{\parskip}{0pt}
-			\renewcommand{\labelitemi}{\bullet}
-			}{%
-		\end{itemize}
+	\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+	\setlength{\parskip}{0pt}
+	\renewcommand{\labelitemi}{\bullet}
+}{%
+	\end{itemize}
 	\end{justify}
-	\vspace{-4.0mm}
 }
-
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter
