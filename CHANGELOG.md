@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.2.0](https://github.com/sungvzer/resume.tex/compare/v2.1.0...v2.2.0) (2026-04-28)
+
+
+### Features
+
+* expand on current work experience ([ccdbcd7](https://github.com/sungvzer/resume.tex/commit/ccdbcd70c28c23e43f593220daa868b5672f98f4))
+* update work experiences ([f8eb91a](https://github.com/sungvzer/resume.tex/commit/f8eb91a48c4afbac7de0840705333ea8f66e0c40))
+* we're kinda late on graduation ([0611009](https://github.com/sungvzer/resume.tex/commit/061100963be7c971f1fd6af187909c76da592173))
+
+
+### Bug Fixes
+
+* spacing in awesome cv class ([5a2ab1a](https://github.com/sungvzer/resume.tex/commit/5a2ab1a523572e107c367fb743590e7ae8a11d31))
+
 ## [2.1.0](https://github.com/sungvzer/resume.tex/compare/v2.0.0...v2.1.0) (2025-01-27)
 
 
