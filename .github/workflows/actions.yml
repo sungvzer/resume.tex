@@ -14,7 +14,7 @@ jobs:
         with:
           root_file: resume.tex
       - name: Upload PDF file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: PDF
           path: resume.pdf
@@ -26,5 +26,4 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run:
-          gh release upload ${{ steps.release.outputs.tag_name }} ./resume.pdf
+        run: gh release upload ${{ steps.release.outputs.tag_name }} ./resume.pdf
