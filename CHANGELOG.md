@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/sungvzer/resume.tex/compare/v2.2.0...v2.3.0) (2026-04-28)
+
+
+### Features
+
+* add HS ([3866de3](https://github.com/sungvzer/resume.tex/commit/3866de335a0816f5c5bcb66e09741809a40555c0))
+
 ## [2.2.0](https://github.com/sungvzer/resume.tex/compare/v2.1.0...v2.2.0) (2026-04-28)
 
 
